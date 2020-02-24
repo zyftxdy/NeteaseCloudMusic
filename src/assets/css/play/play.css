@@ -1,0 +1,256 @@
+.normalPlay-enter-active, .normalPlay-leave-active {
+    transition: all .3s;
+}
+.normalPlay-enter, .normalPlay-leave-to {
+    transform: translateY(50%);
+    opacity: 0;
+}
+.normalPlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 150;
+    background: #f2f3f4;
+}
+.normalPlay .background{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    opacity: .6;
+    z-index: -1;
+    filter: blur(30px);
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    bottom: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.middle .playImg{
+    position: absolute;
+    width: 30%;
+    top: -10px;
+    left: 60%;
+    z-index: 1;
+    transform: translateX(-60%);
+}
+.middle .playImg img{
+    width: 90%;
+    display: block;
+    transform: rotate(-5deg);
+    transform-origin: 20px 20px;
+    transition: all .5s linear;
+}
+.middle .playImg .notAnimated{
+    transform: rotate(-30deg);
+}
+.middle .playImg .animated{
+    transform: rotate(-5deg);
+}
+.middle .middle-l{
+    display:block;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    animation: middle-l 10s linear infinite;
+}
+.middle .animated{
+    animation-play-state:running;
+}
+.middle .notAnimated{
+    animation-play-state:paused;
+}
+.middle-l img{
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+.middle .middle-l .cd{
+    position: absolute;
+    width: 60%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.middle .middle-l .cd img{
+    width: 87%;
+    border-radius: 50%;
+}
+.bottom{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+.bottom .progress-wrapper{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.bottom .progress-wrapper .time{
+    color: #3c3c3c;
+    font-size: 12px;
+    flex: 0 0 30px;
+    line-height: 30px;
+    width: 30px;
+}
+.bottom .progress-wrapper .time-l{
+    text-align: left;
+}
+.bottom .progress-wrapper .time-r{
+    text-align: right;
+}
+.bottom .progress-wrapper .progress{
+    flex:1;
+    position: relative;
+}
+.progress-wrapper .progress .bar{
+    position: absolute;
+    height: 3px;
+    background: rgba(249, 44, 44, 0.5);
+}
+.progress .playBar{
+    position: absolute;
+    left: 0px;
+    top: -2.5px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+}
+/* .progress .icon-jindudianhui{
+    font-size: 25px;
+    color:rgba(255, 255, 255, 0.9) ;
+} */
+.progress-wrapper .progress .line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0,.5);
+}
+.bottom .operators{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.operators .icon-left,
+.operators .icon-right{
+    width: 50px;
+}
+.operators .center{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.operators .center .icon-center{
+    flex:1;
+}
+.operators .center .iconfont{
+    font-size: 30px;
+}
+.operators .center .icon-quanbubofang,
+.operators .center .icon-zhengzaibofang{
+    font-size: 40px;
+}
+.operators .icon-liebiaoxiangyou{
+    font-size: 26px;
+}
+.icon .iconfont{
+    font-size: 24px;
+    color: #fff9f9;
+}
+.miniPlay{
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background:rgb(255, 255, 255,.8);
+    border-top: 1px solid #eae9e9;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.miniPlay .icon{
+    flex: 0 0 35px;
+    padding: 0 0px 0 10px;    
+}
+.miniPlay .icon img{
+    width: 100%;
+    border-radius: 50%;
+    animation: miniPlay 10s linear infinite;
+}
+.miniPlay .icon .animated{
+    animation-play-state: running;
+}
+.miniPlay .icon .notAnimated{
+    animation-play-state: paused;
+}
+.miniPlay .info{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    padding-left: 10px;
+    font-size: 13px;
+    justify-content: center;
+    overflow: hidden;
+}
+.miniPlay .info span:first-child{
+    color: #222222;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.miniPlay .info span:last-child{
+    font-size: 11px;
+    color: #5c5959;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.miniPlay .control,
+.miniPlay .playList{
+    width: 45px;
+    position: relative;
+}
+.miniPlay .control .icon-quanbubofang,
+.miniPlay .control .icon-zhengzaibofang,
+.miniPlay .playList .icon-liebiaoxiangyou{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    color: #4f4f4f;
+}
+@keyframes middle-l {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes miniPlay{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
