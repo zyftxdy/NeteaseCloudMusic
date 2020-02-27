@@ -34,7 +34,13 @@ const routes = [
   },
   {
     path:'/playList',
-    component:() => import('../views/playList/playList.vue')
+    component:() => import('../views/playList/playList.vue'),
+    children:[
+      {
+        path:':id',
+        component:() => import('../views/home/childComps/musicListDetail/musicListDetail.vue')
+      }
+    ]
   },
   {
     path:'/rankingList',
@@ -63,12 +69,12 @@ const router = new VueRouter({
   routes
 });
 
-/* 打印路由跳转
+/* //打印路由跳转
 router.beforeEach((to,from,next)=>{
   console.log(from);
   console.log(to);
   next();
-}) 
-*/
+}) */ 
+
 
 export default router;

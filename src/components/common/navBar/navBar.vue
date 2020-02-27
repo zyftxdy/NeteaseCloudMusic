@@ -24,7 +24,7 @@ export default {
         text-align: center; 
         border-bottom: 1px solid #fcfcfc;
         background: white;  
-        z-index: 1;
+        z-index: 10;
     }
     .nav-left,.nav-right{
         width: 50px;

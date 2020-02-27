@@ -121,7 +121,7 @@ export default {
         bottom: 0;
         right: 0;
         background: rgba(138, 138, 138, 0.1);
-        z-index: 5;
+        z-index: 100;
     }
     .content{
       position: absolute;

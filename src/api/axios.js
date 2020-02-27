@@ -5,7 +5,7 @@ export function api(config) {
     return new Promise((resolve,reject) => {
         const instance = axios.create({
             baseURL:'http://localhost:3000',
-            timeout:10000
+            timeout:5000
         })
 
         //拦截器

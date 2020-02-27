@@ -171,6 +171,9 @@ export default {
     }
     .navCenter{
         text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .detail{
         width: 100%;

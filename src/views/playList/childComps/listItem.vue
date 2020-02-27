@@ -16,7 +16,7 @@
 import {mapMutations} from 'vuex'
 
 export default {
-    name:'musicListItem',
+    name:'listItem',
     props:{
         listItem:{
             type:Object,
@@ -45,7 +45,7 @@ export default {
     methods:{
         handleClick(){
             this.saveMusicList(this.listItem);
-            this.$router.push({path:`/home/${this.listItem.id}`});  
+            this.$router.push({path:`/playList/${this.listItem.id}`});  
         },
 
         ...mapMutations({

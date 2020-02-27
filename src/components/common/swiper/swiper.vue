@@ -100,7 +100,7 @@ export default {
         //滚动位置
         scrollContent:function(currentPosition){
             this.scrolling = true;
-            this.$refs.swiper.style.transition = `transform 1s ease 0s`;
+            this.$refs.swiper.style.transition = `transform 1s linear 0s`;
 
             this.setTransform(currentPosition);
 
@@ -111,7 +111,7 @@ export default {
         checkPosition: function () {
             window.setTimeout(() => {
                 // 1.校验正确的位置
-                this.$refs.swiper.style.transition = '0ms';
+                this.$refs.swiper.style.transition = 'transform 0ms linear 0s';
                 if (this.currentIndex >= this.imageLength + 1) {
                     this.currentIndex = 1;
                     this.setTransform(-this.currentIndex * this.screenWidth);
@@ -119,7 +119,7 @@ export default {
                     this.currentIndex = this.imageLength;
                     this.setTransform(-this.currentIndex * this.screenWidth);
                 }
-                this.$emit('transitionEnd', this.currentIndex-1);
+                //this.$emit('transitionEnd', this.currentIndex-1);
             }, 1000)
         },
         /**
@@ -208,7 +208,7 @@ export default {
         height: 1px;
         margin-left: 2px;
         background: rgba(255, 255, 255, .5);
-        transition: all .1s linear;
+        transition: transform .1s linear;
     }
     .indicator span:first-child{
         margin: 0;
