@@ -1,8 +1,10 @@
 <template>
     <div class="listItem" @click="saveSong(listItem)">
-        <img v-lazy="listItem.image" alt="">
-        <div class="play">
-            <i class="iconfont icon-bofang"></i>
+        <div class="img">
+            <img v-lazy="listItem.image" alt="">
+            <div class="play">
+                <i class="iconfont icon-bofang"></i>
+            </div>
         </div>
         <div class="info">
             <p class="song">{{listItem.name}}</p>
@@ -41,9 +43,12 @@ export default {
         width: 100%;
         border-radius: 5px;
     }
+    .listItem .img{
+        position: relative;
+    }
     .listItem .play{
         position: absolute;
-        top: 65px;
+        bottom: 10px;
         right: 6px;
         width: 25px;
         text-align: center;

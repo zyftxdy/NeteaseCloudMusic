@@ -8,7 +8,12 @@
             v-for="(item,index) in recommendList" 
             :key="index"
             >
-            <img v-lazy="item.picUrl" alt="">
+            <div class="img">
+                <img v-lazy="item.picUrl" alt="">
+                <div class="play">
+                    <i class="iconfont icon-bofang"></i>
+                </div>
+            </div>
             <div class="number">
                 <i class="iconfont icon-tinggeliang"></i>
                 <span>{{item.playCount | showCount}}</span>
@@ -89,7 +94,6 @@ export default {
         touchMove(e){
             if(this.touch.initated){
                 this.touch.initated = false;
-            
                 this.touch.moveX =e.touches[0].clientX-this.touch.startX;
                 if(this.touch.moveX>0){
                     //console.log('上一张',this.currentIndex);
@@ -189,6 +193,26 @@ export default {
         position: relative;
         top: -1px;
         right: 1px;
+    }
+    .swiperItem .img{
+        position: relative;
+    }
+    .play{
+        position: absolute;
+        bottom: 10px;
+        right: 6px;
+        width: 25px;
+        text-align: center;
+        height: 25px;
+        line-height: 25px;
+        background: rgba(246, 239, 239,.5);
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 2px 3px 4px -2px rgb(0,0,0,.5);
+    }
+    .play .iconfont{
+        font-size: 14px;
+        color: #F43535;
     }
     .swiperItem .info{
         float: left;

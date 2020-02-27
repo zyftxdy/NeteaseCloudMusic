@@ -195,6 +195,7 @@ export default {
         flex-flow: column;
         justify-content: space-around;
         padding-left: 10px;
+        overflow: hidden;
     }
     .item .song span{
         text-overflow: ellipsis;
