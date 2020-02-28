@@ -177,6 +177,9 @@ export default {
             return this.mode === 0?'icon--lbxh':(this.mode===1?'icon-danquxunhuan':'icon-suijibofang')
         }
     },
+    updated(){
+        this.$refs.scroll.refresh();
+    },
     watch:{
         playSong(newVal,oldVal){
             if(!newVal.id){

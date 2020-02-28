@@ -51,6 +51,9 @@ export default {
     mounted(){
         this._getRankList();
     },
+    updated(){
+        this.$refs.scroll.refresh();
+    },
     //如果页面有keep-alive缓存功能，这个函数会触发
     activated(){
       this.$refs.scroll.refresh()

@@ -119,16 +119,19 @@
 }
 .progress-wrapper .progress .bar{
     position: absolute;
-    height: 3px;
+    height: 2px;
     background: rgba(249, 44, 44, 0.5);
 }
 .progress .playBar{
     position: absolute;
     left: 0px;
-    top: -2.5px;
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0.9);
     background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    overflow: hidden;
 }
 /* .progress .icon-jindudianhui{
     font-size: 25px;
@@ -137,7 +140,7 @@
 .progress-wrapper .progress .line{
     position: absolute;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: rgb(0, 0, 0,.5);
 }
 .bottom .operators{

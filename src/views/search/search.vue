@@ -73,6 +73,9 @@ export default {
     mounted(){
 
     },
+    updated(){
+        this.$refs.scroll.refresh()
+    },
     activated(){
        
     },

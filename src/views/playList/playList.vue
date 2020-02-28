@@ -15,7 +15,7 @@
                     />
                 </div>    
         </scroll>
-    <router-view></router-view>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -84,10 +84,9 @@ export default {
       bottom:0;
       left: 0;
       right: 0;
-      /* overflow: hidden; */
+      overflow: hidden;
     }
     .playList{
-        position: relative;
         padding-top: 40px;
     }
     .List{

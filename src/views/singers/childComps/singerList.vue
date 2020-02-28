@@ -92,6 +92,7 @@ export default {
             this.offsetTops = offsetTops;  
             //console.log(this.offsetTops);
         },20)
+        this.$refs.scroll.refresh()
     },
     methods:{
         scroll(position){

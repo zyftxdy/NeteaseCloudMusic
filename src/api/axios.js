@@ -4,8 +4,8 @@ import axios from 'axios';
 export function api(config) {
     return new Promise((resolve,reject) => {
         const instance = axios.create({
-            baseURL:'http://localhost:3000',
-            timeout:5000
+            baseURL:'http://118.31.2.17:3000/',
+            timeout:10000
         })
 
         //拦截器
