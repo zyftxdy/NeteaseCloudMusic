@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import VueLazyLoad from 'vue-lazyload';
+import FasrClick from 'fastclick';
+
 
 Vue.config.productionTip = false;
 
@@ -14,6 +16,9 @@ Vue.use(VueLazyLoad,{
   preLoad: 1,
   loading: require('./assets/img/common/default.jpg')
 })
+
+//解决移动端点击300ms延迟
+FasrClick.attach(document.body)
 
 new Vue({
   router,
