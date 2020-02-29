@@ -42,7 +42,7 @@
 * fastclick
 ## 运行项目
 项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi);在此非常感谢提供使用<br>
-因此使用前要保证已经克隆api到本地
+因此使用前要保证已经克隆api接口到本地
 > [网易云音乐api使用文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
 ## 运行
 
