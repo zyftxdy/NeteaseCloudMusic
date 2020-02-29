@@ -55,5 +55,32 @@ npm install
 # 运行
 npm run serve
 ```
+## 项目布局
+```
+├── src                   
+├── api                                               
+│   ├── axios.js           //axios封装
+│   ├── home.js            // 主页面api请求
+│   ├── playList.js        // 歌单api请求
+│   ├── index.js           // 配置控制
+│   ├── local.json         // 本地
+│   ├── production.json    // 生产环境
+│   └── test.json          // 测试环境
+├── data
+├── doc                         // 文档
+├── environment
+├── gulpfile.js
+├── locales
+├── logger-service.js           // 启动日志配置
+├── node_modules
+├── package.json
+├── app-service.js              // 启动应用配置
+├── static                      // web静态资源加载
+│   └── initjson
+│       └── config.js         // 提供给前端的配置
+├── test
+├── test-service.js
+└── tools
+```
 ## 作者
 > zyftxdy
