@@ -38,14 +38,14 @@
 * pinyin(将汉字转为拼音 地址:[https://github.com/hotoo/pinyin](https://github.com/hotoo/pinyin))<br/>
 * fastclick
 ## 运行项目
-项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi)<br>
-在此非常感谢提供使用<br>
-因此使用前要保证已经克隆api到本地[api使用文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
+项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi);在此非常感谢提供使用<br>
+因此使用前要保证已经克隆api到本地
+> [网易云音乐api使用文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
 ## 运行
 
 ```
-#
-git clone https://github.com/Binaryify/NeteaseCloudMusicApi
+# 克隆项目到本地
+git clone https://github.com/zyftxdy/NeteaseCloudMusic.git
 ```
 ```
 # 安装依赖
@@ -55,20 +55,5 @@ npm install
 # 运行
 npm run serve
 ```
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 作者
+> zyftxdy
