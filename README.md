@@ -39,9 +39,14 @@
 * fastclick
 ## 运行项目
 项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi)<br>
-在此非常感谢提供使用
+在此非常感谢提供使用<br>
+因此使用前要保证已经克隆api到本地[api使用文档](https://binaryify.github.io/NeteaseCloudMusicApi/#/)
 ## 运行
 
+```
+#
+git clone https://github.com/Binaryify/NeteaseCloudMusicApi
+```
 ```
 # 安装依赖
 npm install
