@@ -17,6 +17,9 @@
 8.搜索历史记录;<br/>
 9.我的喜欢;<br/>
 10.最近播放;<br/>
+11.歌曲播放;<br/>
+12.歌曲切换、添加喜欢;<br/>
+13.歌词展示;<br/>
 ...<br/>
 ## 项目目标
 目标:移植网易云APP的大致功能 <br/>
@@ -55,32 +58,35 @@ npm install
 # 运行
 npm run serve
 ```
-## 项目布局
+## 项目结构
 ```
-├── src                   
+├─ src                   
 ├── api                                               
-│   ├── axios.js           //axios封装
-│   ├── home.js            // 主页面api请求
-│   ├── playList.js        // 歌单api请求
-│   ├── index.js           // 配置控制
-│   ├── local.json         // 本地
-│   ├── production.json    // 生产环境
-│   └── test.json          // 测试环境
-├── data
-├── doc                         // 文档
-├── environment
-├── gulpfile.js
-├── locales
-├── logger-service.js           // 启动日志配置
-├── node_modules
-├── package.json
-├── app-service.js              // 启动应用配置
-├── static                      // web静态资源加载
-│   └── initjson
-│       └── config.js         // 提供给前端的配置
-├── test
-├── test-service.js
-└── tools
+│   ├── axios.js                //axios封装
+│   ├── home.js                 // 主页面api方法
+│   ├── playList.js             // 歌单api方法
+│   ├── rankingList.js          // 排行榜api方法
+│   ├── search.js               // 搜索api方法
+│   ├── singer.js               // 歌手api方法
+│   └── song.js                 // 歌曲api方法
+├── assets                      //静态资源
+│   ├── css                     //css样式
+│       ├── common              // 公用样式
+|           ├── iconfont.css    //iconfont字体图标
+|           └── normalize.css   //css重置
+|       └── play                
+|           └── play.css        //播放页面css样式
+|   └── img                     //公用图片    
+├── common                      // 公共js
+│   ├── common.js                
+│   ├── mixin.js                 
+│   ├── play.js             
+│   ├── singer.js          
+│   ├── song.js               
+│   ├── stroage.js              
+│   └── util.js                 
+├── components
+
 ```
 ## 作者
 > zyftxdy
