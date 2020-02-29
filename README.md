@@ -22,7 +22,7 @@
 13.歌词展示;<br/>
 ...<br/>
 ## 项目目标
-目标:移植网易云APP的大致功能 <br/>
+目标:移植网易云APP的大致功能(暂时不支持登录功能) <br/>
 持续更新中....<br/>
 使用中有任何建议，请Issues<br/>
 ## 项目进度
@@ -85,8 +85,53 @@ npm run serve
 │   ├── song.js               
 │   ├── stroage.js              
 │   └── util.js                 
-├── components
-
+├── components                  //组件
+|   ├── common                  //复用组件
+|       └── confirm             //对话框组件
+|           ├── loading         //loading组件
+|           ├── navBar          //navBar组件
+|           ├── scroll          //better-scroll组件
+|           ├── swiper          //轮播图组件
+|           └── tips            //小提示组件
+|   └── content                 //项目组件
+|      └── navBar               //homenavBar组件
+├── router                      //路由跳转
+|   └── index.js                
+├── store                       //vuex状态管理
+│   ├── index.js                
+│   ├── state.js                 
+│   ├── actions.js             
+│   ├── mutations.js          
+│   └── getters.js                 
+├── views                       //项目页面
+│   ├── home                    //主界面
+|       ├── childComps          //子组件
+|           ├── music           //推荐歌单
+|           ├── musicListDetail //歌单详情
+|           └── radio           //新歌/电台节目
+|       └── home.vue           
+│   ├── myMusic                 //我的音乐
+|       ├── childComps          //子组件
+|       └── myMusic.vue           
+│   ├── play                    //播放界面 
+|       ├── childComps          //子组件
+|       └── play.vue           
+│   ├── playList                //歌单界面
+|       ├── childComps          //子组件
+|       └── playList.vue           
+│   ├── rankingList             //排行榜界面
+|       ├── childComps          //子组件
+|       └── rankingList.vue           
+│   ├── singers                 //歌手界面
+|       ├── childComps          //子组件
+|       └── singers.vue           
+│   └── search                  //搜索界面
+|       ├── childComps          //子组件
+|           ├── historyList     //搜索历史记录
+|           ├── hotList         //热搜榜
+|           ├── searchList      //搜索列表
+|           └── searchBar       //搜索框
+|       └── search.vue           
 ```
 ## 作者
 > zyftxdy
