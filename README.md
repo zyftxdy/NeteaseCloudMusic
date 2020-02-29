@@ -2,8 +2,8 @@
 
 一个基于vue开发的网易云音乐webapp  
 附上项目的预览地址[http://118.31.2.17](http://118.31.2.17) 
-也可扫描下方二维吗预览
-(http://118.31.2.17/code.png)
+也可扫描下方二维码预览
+![](http://118.31.2.17/code.png)
 ## Project setup
 ```
 npm install
