@@ -40,8 +40,16 @@
 ## 运行项目
 项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi)<br>
 在此非常感谢提供使用
+## 运行
 
-
+```
+# 安装依赖
+npm install
+```
+```
+# 运行
+npm run serve
+```
 ### Compiles and minifies for production
 ```
 npm run build
