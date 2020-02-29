@@ -28,10 +28,17 @@
     + 1.实现智能搜索提示<br>
     + 2.歌单广场完善<br>
     + 3.歌手分类完善<br>
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 技术栈
+**依赖**
+* vue全家桶(vue cil3脚手架构建)<br/>
+* lazyload<br/>
+* good-stroage<br/>
+* better-scroll<br/>
+* axios<br/>
+* pinyin(将汉字转为拼音 地址:[https://github.com/hotoo/pinyin](https://github.com/hotoo/pinyin))<br/>
+* fastclick
+## 运行项目
+项目的运行主要依赖于
 
 ### Compiles and minifies for production
 ```
