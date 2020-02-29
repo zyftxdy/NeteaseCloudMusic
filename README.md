@@ -1,6 +1,6 @@
 # 介绍
 
-一个基于vue开发的网易云音乐webapp  
+一个基于vue开发的网易云音乐webapp 
 附上项目的预览地址[http://118.31.2.17](http://118.31.2.17) <br/>
 也可扫描下方二维码预览<br/>
 ![](http://118.31.2.17/code.png)
@@ -15,7 +15,9 @@
 8.搜索历史记录;<br/>
 9.我的喜欢;<br/>
 10.最近播放;<br/>
-
+## 项目目标
+移植网易云APP的大致功能 **PS:正常使用还请下载[网易云音乐](https://music.163.com/)客户端**<br/>
+持续更新中....
 ### Compiles and hot-reloads for development
 ```
 npm run serve
