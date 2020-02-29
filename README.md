@@ -38,7 +38,9 @@
 * pinyin(将汉字转为拼音 地址:[https://github.com/hotoo/pinyin](https://github.com/hotoo/pinyin))<br/>
 * fastclick
 ## 运行项目
-项目的运行主要依赖于
+项目的运行主要依赖于[Binaryify](https://github.com/Binaryify)提供的[api接口](https://github.com/Binaryify/NeteaseCloudMusicApi)<br>
+在此非常感谢提供使用
+
 
 ### Compiles and minifies for production
 ```
