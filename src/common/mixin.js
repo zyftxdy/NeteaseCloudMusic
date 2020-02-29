@@ -2,6 +2,7 @@ import {mapActions,mapMutations,mapGetters} from 'vuex'
 
 import {getSongDetail} from 'api/search'
 
+
 export const savePlayList = {
     methods:{
         //播放单曲
@@ -20,9 +21,9 @@ export const savePlayList = {
                 getSongDetail(song.id).then(res=>{
                     song.image = res.songs[0].al.picUrl;
                 })
-            }       
+            } 
             this.insertSong(song);
-            this.addPlay(song);
+            this.addPlay(song);            
         },
 
         //(歌单歌手详情)全部播放
@@ -34,10 +35,15 @@ export const savePlayList = {
                 song.id= listItem[i].id;
                 song.name = listItem[i].name;
                 song.singer = this.showName(listItem[i].ar);
-                song.image = listItem[i].al.picUrl; 
+                if(listItem[i].al.picUrl){
+                    song.image = listItem[i].al.picUrl;
+                }else{
+                    getSongDetail(song.id).then(res=>{
+                        song.image = res.songs[0].al.picUrl;
+                    })
+                };
                 list.push(song);
             }
-
             this.savePlayLists(list);
         },
 

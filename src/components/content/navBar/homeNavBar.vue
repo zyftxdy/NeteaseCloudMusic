@@ -66,7 +66,7 @@ export default {
     .navBarList span{
         flex: 1;
         font-size: 16px;
-        transition: all .3s linear;
+        transition: all .2s linear;
     }
     .navBarList span.active{
         font-size: 18px;

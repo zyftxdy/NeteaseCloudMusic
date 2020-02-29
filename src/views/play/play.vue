@@ -194,15 +194,22 @@ export default {
         },
         url(newUrl){
             this._getLyric(this.playSong.id);
-            this.$refs.audio.src = newUrl;
-            let stop = setInterval(()=>{
-                this.duration = this.$refs.audio.duration;
-                this.setPlaying(true);
-                //console.log(this.duration);
-                if(this.duration){
-                    clearInterval(stop);
-                }
-            },150)  
+            if(newUrl==null){
+                this.$refs.audio.currentTime = 0;
+                this.$refs.audio.pause();
+                this.setPlaying(false);
+                this.showMode('暂无版权');
+            }else{
+                this.$refs.audio.src = newUrl;
+                let stop = setInterval(()=>{
+                    this.duration = this.$refs.audio.duration;
+                    this.setPlaying(true);
+                    //console.log(this.duration);
+                    if(this.duration){
+                        clearInterval(stop);
+                    }
+                },150)
+            }  
         }
     },
     methods:{

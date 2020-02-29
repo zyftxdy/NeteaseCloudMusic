@@ -132,9 +132,7 @@ export default {
             if(this.getMusicList.id){
                 getListDetails(this.getMusicList.id).then(res => {
                     let itemInfo = new MusicList(res);
-                    this.song = itemInfo;
-                    //console.log(this.song);
-                    
+                    this.song = itemInfo;                 
                     this.show = false
                 })
             }  

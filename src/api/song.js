@@ -10,6 +10,16 @@ export function getSong(id){
     })
 }
 
+//检查音乐是否可用
+export function checkSong(id){
+    return api({
+        url:'/check/music',
+        params:{
+            id
+        }
+    })
+}
+
 //获取歌词
 export function getLyric(id){
     return api({

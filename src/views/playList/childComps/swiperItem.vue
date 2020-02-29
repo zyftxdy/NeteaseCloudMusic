@@ -222,6 +222,7 @@ export default {
         font-size: 11px;
         position: relative;
         padding:0 5px 0 5px;
+        height: 30px;
     }
     .swiperItem .info p{
         margin: 0;
